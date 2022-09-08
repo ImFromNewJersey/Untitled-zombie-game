@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 85a3ef2b21690794bacdb684cfe7c5f3
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _MaskHair: {fileID: 2800000, guid: e5172f9561b5b104eab4a54421b0143e, type: 3}
+  - _MaskHair2: {fileID: 2800000, guid: 8cad2dd697e20bc4baff714aba94e28a, type: 3}
+  - _MaskSkin: {fileID: 2800000, guid: cd95ab72febb22d498b296987e19de61, type: 3}
+  - _MaskEyes: {fileID: 2800000, guid: ecf37ecb20c1f394c8b8df51839238cf, type: 3}
+  - _MaskMouth: {fileID: 2800000, guid: 2199534a39b1f0c47b03abe481897c9b, type: 3}
+  - _MaskFaceHair: {fileID: 2800000, guid: 49324f1d0cccb24478f7cb28e2c18a31, type: 3}
+  - _MaskUnderwearT: {fileID: 2800000, guid: c9c57f721fa8bde4c900bdc1c53bb38d, type: 3}
+  - _MaskUnderwearB: {fileID: 2800000, guid: f142a77d7a6b5e244b454722cb385336, type: 3}
+  - _Texture: {instanceID: 0}
+  - _texcoord: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

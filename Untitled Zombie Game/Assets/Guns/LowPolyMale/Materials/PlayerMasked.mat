@@ -1,0 +1,303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7246180338335626723
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PlayerMasked
+  m_Shader: {fileID: 4800000, guid: 85a3ef2b21690794bacdb684cfe7c5f3, type: 3}
+  m_ShaderKeywords: _GLOSSYREFLECTIONS_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: df7c2ee1663b52742ad460c3c6365fce, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EyesMask:
+        m_Texture: {fileID: 2800000, guid: 6c29e2287b7d9594887e489744b814e6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Glove01Mask:
+        m_Texture: {fileID: 2800000, guid: 8ea1f3404b5fa6f4aa6805bd02aa34da, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Glove02Mask:
+        m_Texture: {fileID: 2800000, guid: 2a4a09dfafc57e4418669d2806ca69ab, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HairMask:
+        m_Texture: {fileID: 2800000, guid: 8bde6cf2123b49442abffc9d1239bba9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask01:
+        m_Texture: {fileID: 2800000, guid: e5172f9561b5b104eab4a54421b0143e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask02:
+        m_Texture: {fileID: 2800000, guid: 8cad2dd697e20bc4baff714aba94e28a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask03:
+        m_Texture: {fileID: 2800000, guid: cd95ab72febb22d498b296987e19de61, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask04:
+        m_Texture: {fileID: 2800000, guid: ecf37ecb20c1f394c8b8df51839238cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask05:
+        m_Texture: {fileID: 2800000, guid: 2199534a39b1f0c47b03abe481897c9b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask06:
+        m_Texture: {fileID: 2800000, guid: 49324f1d0cccb24478f7cb28e2c18a31, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask07:
+        m_Texture: {fileID: 2800000, guid: c9c57f721fa8bde4c900bdc1c53bb38d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask08:
+        m_Texture: {fileID: 2800000, guid: f142a77d7a6b5e244b454722cb385336, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask09:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask10:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask11:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask12:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask13:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask14:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask15:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask16:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskEyes:
+        m_Texture: {fileID: 2800000, guid: ecf37ecb20c1f394c8b8df51839238cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskFaceHair:
+        m_Texture: {fileID: 2800000, guid: 49324f1d0cccb24478f7cb28e2c18a31, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskHair:
+        m_Texture: {fileID: 2800000, guid: e5172f9561b5b104eab4a54421b0143e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskHair2:
+        m_Texture: {fileID: 2800000, guid: 8cad2dd697e20bc4baff714aba94e28a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMouth:
+        m_Texture: {fileID: 2800000, guid: 2199534a39b1f0c47b03abe481897c9b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskSkin:
+        m_Texture: {fileID: 2800000, guid: cd95ab72febb22d498b296987e19de61, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskUnderwearB:
+        m_Texture: {fileID: 2800000, guid: f142a77d7a6b5e244b454722cb385336, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskUnderwearBottom:
+        m_Texture: {fileID: 2800000, guid: 49324f1d0cccb24478f7cb28e2c18a31, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskUnderwearT:
+        m_Texture: {fileID: 2800000, guid: c9c57f721fa8bde4c900bdc1c53bb38d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskUnderwearTop:
+        m_Texture: {fileID: 2800000, guid: 2199534a39b1f0c47b03abe481897c9b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MouthMask:
+        m_Texture: {fileID: 2800000, guid: 292952c7ce3b9944f81e18802c19b23b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SkinMask:
+        m_Texture: {fileID: 2800000, guid: eb917568defc8d24f9cf859981bdf45f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: df7c2ee1663b52742ad460c3c6365fce, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UW1Mask:
+        m_Texture: {fileID: 2800000, guid: fa6fcdb49f5198845a1265b720cfcb1f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UW2Mask:
+        m_Texture: {fileID: 2800000, guid: be50c8d0f7c8d8f41952fcc0f72a08e8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _BumpScale: 1
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EnvironmentReflections: 1
+    - _Float0: 0
+    - _Float1: 0
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _O: 0
+    - _OcclusionStrength: 1
+    - _Offset: 0
+    - _Parallax: 0.02
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _Smoothness: 0.2
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _T: 0
+    - _Tiling: 1
+    - _UVSec: 0
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Colour: {r: 1, g: 1, b: 1, a: 0}
+    - _Colour01: {r: 0.3584906, g: 0.2750841, b: 0.18431827, a: 1}
+    - _Colour02: {r: 1, g: 0.8298892, b: 0.6650944, a: 1}
+    - _Colour03: {r: 0, g: 0, b: 0, a: 1}
+    - _Colour04: {r: 0.5, g: 0.39044642, b: 0.2712264, a: 1}
+    - _Colour05: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
+    - _Colour06: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
+    - _Colour07: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
+    - _Colour08: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
+    - _Colour09: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+    - _Colour10: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
+    - _Colour11: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
+    - _Colour12: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
+    - _Colour13: {r: 1, g: 1, b: 1, a: 0}
+    - _Colour14: {r: 1, g: 1, b: 1, a: 0}
+    - _Colour15: {r: 1, g: 1, b: 1, a: 0}
+    - _Colour16: {r: 1, g: 1, b: 1, a: 0}
+    - _ColourEyes: {r: 0, g: 0, b: 0, a: 1}
+    - _ColourFaceHair: {r: 0.3773585, g: 0.33667293, b: 0.29725882, a: 1}
+    - _ColourHair: {r: 0.1981132, g: 0.17770262, b: 0.15792987, a: 1}
+    - _ColourHair2: {r: 0.3773585, g: 0.33667293, b: 0.29725882, a: 1}
+    - _ColourMouth: {r: 0.7735849, g: 0.6679381, b: 0.56559277, a: 1}
+    - _ColourSkin: {r: 0.9568628, g: 0.8313726, b: 0.70980394, a: 1}
+    - _ColourUnderwearB: {r: 0, g: 0, b: 0, a: 1}
+    - _ColourUnderwearBottom: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
+    - _ColourUnderwearT: {r: 1, g: 1, b: 1, a: 1}
+    - _ColourUnderwearTop: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EyesColour: {r: 0, g: 0, b: 0, a: 1}
+    - _Glove01Colour: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
+    - _Glove02Colour: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+    - _HairColour: {r: 0.1981132, g: 0.17770262, b: 0.15792987, a: 1}
+    - _MouthColour: {r: 0.8, g: 0.7411765, b: 0.68627447, a: 1}
+    - _O: {r: 0, g: 0, b: 0, a: 0}
+    - _Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _SkinColour: {r: 0.95686275, g: 0.83137256, b: 0.70980394, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _UW1Colour: {r: 0.6084906, g: 0.8661082, b: 1, a: 1}
+    - _UW2Colour: {r: 1, g: 1, b: 1, a: 1}
+    - _Vector0: {r: 0, g: 0, b: 0, a: 0}
+    - _Vector1: {r: 0, g: 0, b: 0, a: 0}

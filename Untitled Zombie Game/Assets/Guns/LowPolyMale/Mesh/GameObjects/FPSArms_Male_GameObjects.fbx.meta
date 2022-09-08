@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: fc9659822f5873c4885eac933bf7644b
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BaseMesh
+    100002: body.arms
+    100004: body.forearms
+    100006: body.hands
+    100008: bodyArmour.gloves
+    100010: bodyArmour.torso
+    100012: //RootNode
+    100014: gloves
+    100016: gloves.2
+    100018: hoodie
+    100020: hoodie.2
+    100022: jacket
+    100024: jumper
+    100026: jumper.2
+    100028: jumper.3
+    100030: radiationSuit
+    100032: tshirt
+    100034: tshirt.2
+    100036: tshirt.3
+    400000: BaseMesh
+    400002: body.arms
+    400004: body.forearms
+    400006: body.hands
+    400008: bodyArmour.gloves
+    400010: bodyArmour.torso
+    400012: //RootNode
+    400014: gloves
+    400016: gloves.2
+    400018: hoodie
+    400020: hoodie.2
+    400022: jacket
+    400024: jumper
+    400026: jumper.2
+    400028: jumper.3
+    400030: radiationSuit
+    400032: tshirt
+    400034: tshirt.2
+    400036: tshirt.3
+    2100000: Attire
+    2100002: Body
+    2300000: BaseMesh
+    2300002: body.arms
+    2300004: body.forearms
+    2300006: body.hands
+    2300008: bodyArmour.gloves
+    2300010: bodyArmour.torso
+    2300012: gloves
+    2300014: gloves.2
+    2300016: hoodie
+    2300018: hoodie.2
+    2300020: jacket
+    2300022: jumper
+    2300024: jumper.2
+    2300026: jumper.3
+    2300028: radiationSuit
+    2300030: tshirt
+    2300032: tshirt.2
+    2300034: tshirt.3
+    3300000: BaseMesh
+    3300002: body.arms
+    3300004: body.forearms
+    3300006: body.hands
+    3300008: bodyArmour.gloves
+    3300010: bodyArmour.torso
+    3300012: gloves
+    3300014: gloves.2
+    3300016: hoodie
+    3300018: hoodie.2
+    3300020: jacket
+    3300022: jumper
+    3300024: jumper.2
+    3300026: jumper.3
+    3300028: radiationSuit
+    3300030: tshirt
+    3300032: tshirt.2
+    3300034: tshirt.3
+    4300000: radiationSuit
+    4300002: jumper.3
+    4300004: tshirt.3
+    4300006: tshirt.2
+    4300008: bodyArmour.gloves
+    4300010: bodyArmour.torso
+    4300012: body.hands
+    4300014: body.forearms
+    4300016: body.arms
+    4300018: hoodie
+    4300020: hoodie.2
+    4300022: jumper.2
+    4300024: gloves.2
+    4300026: jacket
+    4300028: tshirt
+    4300030: gloves
+    4300032: jumper
+    4300034: BaseMesh
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Attire
+    second: {fileID: 2100000, guid: 894cd129f55883a4d836044b67014023, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: b4d8fc3b719535a4195d3e8a9bd3dfea, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
