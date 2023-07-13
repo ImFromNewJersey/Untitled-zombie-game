@@ -72,3 +72,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Untitled Zombie Game/Assets/Map/Castle/Test/LightingData.asset
 Untitled Zombie Game/Assets/Map/Castle/Test/LightingData.asset.meta
+Untitled Zombie Game/Assets/Scenes/Castle/Test/LightingData.asset
+Untitled Zombie Game/Assets/Scenes/Castle/Test/LightingData.asset.meta
