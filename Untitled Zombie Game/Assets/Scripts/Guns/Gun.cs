@@ -126,19 +126,16 @@ public class Gun : MonoBehaviour
             nextTimeToFire = Time.time + 1f / firerate;
             Shoot();
             recoilScript.ShotRecoil();
-            //Oldrecoil system
-            //GameObject.FindGameObjectWithTag("Recoil").GetComponent<Recoil>().Fire();
         }
     }
     //handles firing of weapon and calling of scripts on applicable entities
     void Shoot()
     {
         //handles Animation and FX
-        animator.SetTrigger("Shooting");    
-        //MuzzleFlash.Play();
+        animator.SetTrigger("Shooting");
+        MuzzleFlash.Play();
         FireSound.Play();
         FireSound.pitch = UnityEngine.Random.Range(1.0f - pitchchange, 1.0f + pitchchange);
-        //sets ammocount-1
         currentammo--;
         //creates a raycast for each "bullet"
         RaycastHit hit;
