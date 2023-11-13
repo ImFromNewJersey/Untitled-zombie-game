@@ -5,10 +5,9 @@ using UnityEngine;
 public class CameraRecoil : MonoBehaviour
 {
 
-    [Header("Recoil")]
     private Vector3 currentRotation;
-    private bool isAiming;
     private Vector3 targetRotation;
+    [Header("Recoil")]
     [Tooltip("Recoil in the X axis."), SerializeField]
     private float RecoilX;
     [Tooltip("Recoil in the Y axis."), SerializeField]

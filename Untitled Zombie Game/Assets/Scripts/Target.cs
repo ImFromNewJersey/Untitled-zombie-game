@@ -37,7 +37,7 @@ public class Target : MonoBehaviour
     void Die()
     {
         GetComponent<Animator>().enabled = false;
-        setRecursiveLayer(gameObject);
+        //setRecursiveLayer(gameObject);
         setRigidbodyState(false);
         setColliderState(true);
         Enemy.isStopped = true;

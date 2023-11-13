@@ -34,6 +34,22 @@ public class Gun : MonoBehaviour
     [Tooltip("Time to aim for gun."), SerializeField]
     private float AimTime = 5f;
 
+    [Header("Recoil Atributes")]
+    [Tooltip("How much damage the gun does per shot."), SerializeField]
+    public Transform recoilPosition;
+    public Transform rotationPoint;
+    public float positionalRecoilSpeed = 8f;
+    public float rotationalRecoilSpeed = 8f;
+    public float positionalReturnSpeed = 18f;
+    public float rotationalReturnSpeed = 38f;
+    public Vector3 RecoilRotation = new Vector3(10, 5, 7);
+    public Vector3 RecoilKickBack = new Vector3(0.015f, 0f, -0.2f);
+    public Vector3 RecoilRotationAim = new Vector3(10, 4, 6);
+    public Vector3 RecoilKickBackAim = new Vector3(0.015f, 0f, -0.2f);
+    Vector3 rotationalRecoil;
+    Vector3 positionalRecoil;
+    Vector3 Rot;
+
     [Header("Gun VFX")]
     [Tooltip("MuzzleFlash particle."), SerializeField]
     private ParticleSystem MuzzleFlash;
@@ -79,6 +95,16 @@ public class Gun : MonoBehaviour
     {
         GunHandler();
         UpdateHud();
+    }
+
+    private void FixedUpdate()
+    {
+        rotationalRecoil = Vector3.Lerp(rotationalRecoil, Vector3.zero, rotationalReturnSpeed * Time.deltaTime);
+        positionalRecoil = Vector3.Lerp(positionalRecoil, Vector3.zero, positionalReturnSpeed * Time.deltaTime);
+
+        recoilPosition.localPosition = Vector3.Slerp(recoilPosition.localPosition, positionalRecoil, positionalRecoilSpeed * Time.deltaTime);
+        Rot = Vector3.Slerp(Rot, rotationalRecoil, rotationalRecoilSpeed * Time.deltaTime);
+        rotationPoint.localRotation = Quaternion.Euler(Rot);
     }
 
     void OnEnable()
@@ -132,7 +158,8 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         //handles Animation and FX
-        animator.SetTrigger("Shooting");
+        animator.SetTrigger("Firing");
+        recoilFire();
         MuzzleFlash.Play();
         FireSound.Play();
         FireSound.pitch = UnityEngine.Random.Range(1.0f - pitchchange, 1.0f + pitchchange);
@@ -159,8 +186,23 @@ public class Gun : MonoBehaviour
                 hit.rigidbody.AddForce(-hit.normal * impactforce);
             }
             //creates an impact FX and destroys it after 2 seconds
-            //GameObject impactGO = Instantiate(impacteffect, hit.point, Quaternion.LookRotation(hit.normal));
-            //Destroy(impactGO, 2f);
+            GameObject impactGO = Instantiate(impacteffect, hit.point, Quaternion.LookRotation(hit.normal));
+            Destroy(impactGO, 2f);
+        }
+    }
+
+    void recoilFire()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            rotationalRecoil += new Vector3(-RecoilRotationAim.x, Random.Range(-RecoilRotationAim.y, RecoilRotationAim.y), Random.Range(-RecoilRotationAim.z, RecoilRotationAim.z));
+            positionalRecoil += new Vector3(Random.Range(-RecoilKickBackAim.x, RecoilKickBackAim.x), Random.Range(-RecoilKickBackAim.y, RecoilKickBackAim.y), RecoilKickBackAim.z);
+
+        }
+        else
+        {
+            rotationalRecoil += new Vector3(-RecoilRotation.x, Random.Range(-RecoilRotation.y, RecoilRotation.y), Random.Range(-RecoilRotation.z, RecoilRotation.z));
+            rotationalRecoil += new Vector3(Random.Range(-RecoilKickBack.x, RecoilKickBack.x), Random.Range(-RecoilKickBack.y, RecoilKickBack.y), RecoilKickBack.z);
         }
     }
     //Handles reloading in a IEnumerator to allow halting of actions during animation
